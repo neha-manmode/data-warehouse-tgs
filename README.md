@@ -11,14 +11,6 @@ This project showcases the full lifecycle of building a cloud-based data warehou
 - **BI Tool**: Microsoft Power BI
 
 
-## 📁 Structure
-
-- `docs/`: Contains assignment reports and ER diagrams
-- `sql/`: SQL DDL scripts and sample inserts
-- `etl/`: Apache Hop pipeline and sample CSV data
-- `powerbi/`: Excel files and Power BI `.pbix` dashboard
-
-
 ## 📈 Key Project Highlights
 
 - ✅ Modeled dimension and fact tables with proper relationships (PKs, FKs)
