@@ -10,27 +10,13 @@ This project showcases the full lifecycle of building a cloud-based data warehou
 - **ETL Tool**: Apache Hop
 - **BI Tool**: Microsoft Power BI
 
+
 ## 📁 Structure
 
 - `docs/`: Contains assignment reports and ER diagrams
 - `sql/`: SQL DDL scripts and sample inserts
 - `etl/`: Apache Hop pipeline and sample CSV data
 - `powerbi/`: Excel files and Power BI `.pbix` dashboard
-
-## 📈 Highlights
-
-- Created ER diagrams and table structures in Oracle Data Modeler
-- Set up cloud data warehouse with proper constraints
-- Built an ETL pipeline handling slowly changing dimensions (SCD)
-- Connected Power BI to the warehouse for interactive reporting
-- Forecasted employment trends and visualized brand-level performance
-
-## 🚀 Tools Used
-
-- Oracle Autonomous Database
-- SQL Developer / Oracle Data Modeler
-- Apache Hop
-- Power BI
 
 
 ## 📈 Key Project Highlights
@@ -41,6 +27,15 @@ This project showcases the full lifecycle of building a cloud-based data warehou
 - ✅ Loaded data into a **FactSales** table from `.csv` using lookups and transformations
 - ✅ Integrated **Power BI** to visualize employment statistics and sales trends
 - ✅ Designed a Power BI dashboard for executive-level business insights
+
+
+## 🚀 Tools Used
+
+- Oracle Autonomous Database
+- SQL Developer / Oracle Data Modeler
+- Apache Hop
+- Power BI
+
 
 ## 🧠 Key Learnings
 
