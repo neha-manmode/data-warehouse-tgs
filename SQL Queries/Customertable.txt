@@ -1,0 +1,57 @@
+10/22/2024, 7:23:52 PM
+-------------------------------------------------------------------------------------------
+"CREATE TABLE ADMIN.Customer 
+    ( 
+     Customer_ID    NUMBER , 
+     First_Name     VARCHAR2 (128) , 
+     Last_Name      VARCHAR2 (128) , 
+     Address        VARCHAR2 (20) , 
+     Email          VARCHAR2 (20) , 
+     Contact_Number VARCHAR2 (20) 
+    ) 
+    LOGGING"
+Table ADMIN.CUSTOMER created.
+
+
+10/22/2024, 7:23:52 PM
+-------------------------------------------------------------------------------------------
+"ALTER TABLE ADMIN.Customer 
+    ADD CONSTRAINT Customer_PK PRIMARY KEY ( Customer_ID ) 
+    USING INDEX LOGGING"
+Table ADMIN.CUSTOMER altered.
+
+
+10/22/2024, 7:23:52 PM
+-------------------------------------------------------------------------------------------
+"CREATE SEQUENCE ADMIN.Customer_Customer_ID_SEQ 
+START WITH 1 
+    MINVALUE  
+    MAXVALUE  
+    CACHE 20"
+Error starting at line : 18 in command -
+CREATE SEQUENCE ADMIN.Customer_Customer_ID_SEQ 
+START WITH 1 
+    MINVALUE  
+    MAXVALUE  
+    CACHE 20
+Error report -
+ORA-03089: invalid number containing 'MAXVALUE'
+
+https://docs.oracle.com/error-help/db/ora-03089/03089. 00000 -  "invalid number containing %s"
+*Cause:    The number containing specified character or string was invalid.
+           Only numeric fields are allowed.
+*Action:   Check the number in the function or expression. Ensure
+           that they contain only numbers, a sign, a decimal point, and the
+           character "E" or "e", and retry the operation.
+
+
+10/22/2024, 7:23:52 PM
+-------------------------------------------------------------------------------------------
+"CREATE OR REPLACE TRIGGER ADMIN.Customer_Customer_ID_TRG 
+BEFORE INSERT ON ADMIN.Customer 
+FOR EACH ROW 
+BEGIN 
+    :NEW.First_Name := ADMIN.Customer_Customer_ID_SEQ.NEXTVAL; 
+END;"
+Trigger ADMIN.CUSTOMER_CUSTOMER_ID_TRG compiled
+

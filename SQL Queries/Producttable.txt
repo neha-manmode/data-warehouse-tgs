@@ -1,0 +1,22 @@
+10/22/2024, 7:01:20 PM
+-------------------------------------------------------------------------------------------
+"CREATE TABLE ADMIN.Product 
+    ( 
+     Product_ID     NUMBER GENERATED ALWAYS AS IDENTITY 
+        ( START WITH 1 CACHE 20 ) , 
+     Product_Name   VARCHAR2 (128) , 
+     Category       VARCHAR2 (20) , 
+     Price          VARCHAR2 (20) , 
+     Stock_Quantity VARCHAR2 (20) 
+    ) 
+    LOGGING"
+Table ADMIN.PRODUCT created.
+
+
+10/22/2024, 7:01:20 PM
+-------------------------------------------------------------------------------------------
+"ALTER TABLE ADMIN.Product 
+    ADD CONSTRAINT Product_PK PRIMARY KEY ( Product_ID ) 
+    USING INDEX LOGGING"
+Table ADMIN.PRODUCT altered.
+

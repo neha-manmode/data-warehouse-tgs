@@ -1,0 +1,22 @@
+10/22/2024, 7:20:30 PM
+-------------------------------------------------------------------------------------------
+"CREATE TABLE ADMIN."Order" 
+    ( 
+     Order_ID         NUMBER GENERATED ALWAYS AS IDENTITY 
+        ( START WITH 1 CACHE 20 ) , 
+     Order_Date       TIMESTAMP , 
+     Order_Status     VARCHAR2 (20) , 
+     Total_Amount     VARCHAR2 (20) , 
+     Shipping_Address VARCHAR2 (20) 
+    ) 
+    LOGGING"
+Table ADMIN."Order" created.
+
+
+10/22/2024, 7:20:30 PM
+-------------------------------------------------------------------------------------------
+"ALTER TABLE ADMIN."Order" 
+    ADD CONSTRAINT Order_PK PRIMARY KEY ( Order_ID ) 
+    USING INDEX LOGGING"
+Table ADMIN."Order" altered.
+

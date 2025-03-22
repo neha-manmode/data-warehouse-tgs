@@ -1,0 +1,24 @@
+10/22/2024, 6:59:02 PM
+-------------------------------------------------------------------------------------------
+"CREATE TABLE ADMIN.Store 
+    ( 
+     Store_ID       NUMBER GENERATED ALWAYS AS IDENTITY 
+        ( START WITH 1 CACHE 20 ) , 
+     Store_Name     VARCHAR2 (128) , 
+     Address        VARCHAR2 (20) , 
+     City           VARCHAR2 (20) , 
+     State          VARCHAR2 (20) , 
+     Contact_Number VARCHAR2 (20) , 
+     Manager_Name   VARCHAR2 (128) 
+    ) 
+    LOGGING"
+Table ADMIN.STORE created.
+
+
+10/22/2024, 6:59:02 PM
+-------------------------------------------------------------------------------------------
+"ALTER TABLE ADMIN.Store 
+    ADD CONSTRAINT Store_PK PRIMARY KEY ( Store_ID ) 
+    USING INDEX LOGGING"
+Table ADMIN.STORE altered.
+
