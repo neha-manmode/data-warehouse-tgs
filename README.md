@@ -33,7 +33,7 @@ This project showcases the full lifecycle of building a cloud-based data warehou
 
 **ETL Pipeline Screenshot:**
 
-![Apache Hop ETL Pipeline](apache-hop-pipeline.png)
+![Apache Hop ETL Pipeline](docs/apache-hop-pipeline.png)
 
 
 ## 📊 Business Intelligence with Power BI
@@ -42,7 +42,7 @@ The dashboard connects to the Oracle data warehouse and visualizes employment an
 
 **Power BI Dashboard Screenshot:**
 
-![Power BI Dashboard](powerbi-dashboard.png)
+![Power BI Dashboard](docs/powerbi-dashboard.png)
 
 
 ## 🧠 Key Learnings
