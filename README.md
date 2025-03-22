@@ -42,7 +42,7 @@ The dashboard connects to the Oracle data warehouse and visualizes employment an
 
 **Power BI Dashboard Screenshot:**
 
-![Power BI Dashboard](docs/powerbi-dashboard.png)
+![Power BI Dashboard](powerbi-dashboard.png)
 
 
 ## 🧠 Key Learnings
